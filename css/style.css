@@ -86,3 +86,12 @@ div{
     border:2px solid black;
     font-weight: bold;
 }
+
+#txtar{
+    margin-left: -300px;
+}
+@media screen and (min-width: 480px) {
+    #txtar {
+        margin-left: -100px;
+    }
+  }
