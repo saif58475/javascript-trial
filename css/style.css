@@ -1,0 +1,88 @@
+a{
+    text-decoration: none;
+}
+div{
+    text-align: center;
+}
+.homepage{
+    background-image: url(../img/images\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+.homepage .coveropacity{
+    background-color: red;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/* the second page */
+.nextpage h3{
+    cursor: pointer;
+
+}
+
+.tazbeeticon{
+    border:0.1em solid grey;
+    padding: 10px;
+    opacity: 0.5;
+}
+.tazbeeticon:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+.side-bar{
+    position: absolute;
+    left:0;
+    top:0;
+    bottom: 0;
+    visibility: hidden;
+   
+}
+.tgroba:hover .side-bar{
+    visibility: visible;
+}
+
+/* the accordion */
+ /* Panel style */
+ .accordion{
+     margin-top: 200px;
+ }
+ .accordion .a-container {
+     padding:15px;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .accordion .a-container .a-panel {
+    
+    color:white;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 10px;
+}
+.accordion:hover{
+    cursor:pointer;
+}
+/* Panel style when active */
+.accordion .a-container.active .a-panel {
+    padding: 15px 10px 10px 10px;
+    opacity: 1;
+    height: auto;
+    max-height: 500px;
+    
+}
+
+
+/* the counter */
+.countdown{
+    border:2px solid black;
+    font-weight: bold;
+}
