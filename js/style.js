@@ -86,3 +86,8 @@ $('textarea').on("input", function(){
        $('#trial').html( maxlength - currentLength)
     }
 });
+
+
+
+
+

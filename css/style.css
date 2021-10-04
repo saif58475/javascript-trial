@@ -41,7 +41,7 @@ div{
     left:0;
     top:0;
     bottom: 0;
-    visibility: hidden;
+    /* visibility: hidden; */
    
 }
 .tgroba:hover .side-bar{
@@ -95,3 +95,6 @@ div{
         margin-left: -100px;
     }
   }
+
+
+
