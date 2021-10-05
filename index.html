@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/60-605393_clock-png-clipart-8-o-clock-clipart-transparent.png">
-    <title>Assignment4</title>
+    <title>Javascript Countdown</title>
 </head>
 <body>
    <!-- the homepage section -->
-    <div class="row vh-100  homepage">
+    <div class="row vh-100  homepage" id="home">
         <!-- to make the opacity layer -->
         <div class="coveropacity"></div>
         <!-- the left section of the menu -->
 <div class="col-lg-4 col-sm-12  align-middle">
 <p class="position-absolute top-50 start-0 " >
-  <a href="#" class="fs-4 text-white"><i class="fas fa-bars fs-5 mx-2"></i></i>menu</a></p>
+  <a href="#" class="fs-4 text-white" id='openbtn'><i class="fas fa-bars fs-5 mx-2"></i></i>menu</a></p>
 </div>
 <!-- the ritazbeeticon section of the egyption party -->
 <div class="col-lg-8 col-sm-12  text-white ">
@@ -32,39 +32,45 @@
 
     <!-- the side bar-->
     
-
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" >&times;</a>
+        <a href="#home">Home</a>
+        <a href="#accordion">Accordion</a>
+        <a href="#countdown">Countdown</a>
+        <a href="#contact">Contact</a>
+      </div>
 
 
     <!-- the section of accordion -->
 
- <div class="accordion container  vh-50 ">
+ <div class="accordion container  vh-50 " id="accordion">
      
   <!-- First accordian  -->
   <div class="a-container bg-info "> 
-      <p class="a-btn">Singer one  <span></span></p>
-      <div class="a-panel bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident est nobis illum amet fugiat officia!</div>
+      <p class="a-btn fw-bold">Singer one  <span></span></p>
+      <div class="a-panel bg-success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, minus odio aut possimus commodi amet ab nihil doloribus quod. Excepturi rem commodi nihil atque debitis placeat similique voluptas molestias dignissimos?</div>
   </div>
 
   <!-- Second accordian  -->
   <div class="a-container bg-info"> 
-      <p class="a-btn">Singer two <span></span></p>
-      <div class="a-panel bg-success">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facere ut asperiores? Ut fuga voluptatum laborum?</div>
+      <p class="a-btn fw-bold">Singer two <span></span></p>
+      <div class="a-panel bg-success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, minus odio aut possimus commodi amet ab nihil doloribus quod. Excepturi rem commodi nihil atque debitis placeat similique voluptas molestias dignissimos?</div>
   </div>
 
   <!-- third accordian  -->
   <div class="a-container bg-info"> 
-      <p class="a-btn">Singer three<span></span></p>
-      <div class="a-panel bg-success">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quisquam voluptate cum modi, quam omnis consequatur!</div>
+      <p class="a-btn fw-bold">Singer three<span></span></p>
+      <div class="a-panel bg-success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, minus odio aut possimus commodi amet ab nihil doloribus quod. Excepturi rem commodi nihil atque debitis placeat similique voluptas molestias dignissimos?</div>
   </div>
   <div class="a-container bg-info"> 
-      <p class="a-btn">Singer four<span></span></p>
-      <div class="a-panel bg-success">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quisquam voluptate cum modi, quam omnis consequatur!</div>
+      <p class="a-btn fw-bold">Singer four<span></span></p>
+      <div class="a-panel bg-success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, minus odio aut possimus commodi amet ab nihil doloribus quod. Excepturi rem commodi nihil atque debitis placeat similique voluptas molestias dignissimos?</div>
   </div>
    
 </div>
 
                          <!-- the counter div i mean the third div  -->
-        <h6 class="text-center mt-5 text-danger">THE COUNTDOWN FROM May 20, 2022 12:00:00</h6>
+        <h6 class="text-center mt-5 text-danger" id="countdown">THE COUNTDOWN FROM May 20, 2022 12:00:00</h6>
     <div class="container row m-auto mb-5 vh-50 countdown">
 <div class="col-lg-3 col-sm-12 p-4  " id='days'></div>
 <div class="col-lg-3 col-sm-12 p-4 " id='hours'></div>
@@ -81,7 +87,7 @@
 
 
 
-<div class="container  row m-auto  mb-5">
+<div class="container  row m-auto  mb-5" id="contact">
 <div class="col-lg-6 col-sm-12  p-2">
     <div class="col-sm-12">
         <h5>CONTACT INFO</h5>

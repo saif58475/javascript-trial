@@ -3,6 +3,8 @@ let hourss = document.getElementById("hours");
 let minutess = document.getElementById("minutes");
 let secondss = document.getElementById("seconds");
 let countDownDate = new Date("May 20, 2022 12:00:00").getTime();
+let closebtn = document.getElementById("mySidenav");
+let openbtn = document.getElementById('openbtn');
 
 // $('.nextpage h3').click(function(){
 
@@ -87,7 +89,14 @@ $('textarea').on("input", function(){
     }
 });
 
-
+// the open/close of the side nav
+  openbtn.addEventListener('click',function(){
+      closebtn.style.width = "200px";
+  })
+  
+closebtn.addEventListener('click',function(){
+    closebtn.style.width = "0";
+})
 
 
 
